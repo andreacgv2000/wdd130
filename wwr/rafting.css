@@ -1,0 +1,51 @@
+
+<link rel="stylesheet" href="styles/rafting.css">
+
+
+:root {
+  --primary-color: #9BA2FF; /* purple */
+  --secondary-color: #A499BE; /* purple sand */
+  --accent1-color: #9E8576; /* sand */
+  --accent2-color: #2A2E45; /* blue black */
+  --heading-font: "Merriweather Sans", sans-serif;
+  --body-font: "Optima", sans-serif;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+  }
+
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+
+.socialmedia a {
+    text-decoration: none;
+}
