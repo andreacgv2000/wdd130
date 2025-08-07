@@ -1,11 +1,10 @@
 
-<link rel="stylesheet" href="styles/rafting.css">
 
 
 :root {
-  --primary-color: #9BA2FF; /* purple */
-  --secondary-color: #A499BE; /* purple sand */
-  --accent1-color: #9E8576; /* sand */
+  --primary-color: #CF995F; /* naranja */
+  --secondary-color: #628395; /* celeste */
+  --accent1-color: #96897B; /* sand */
   --accent2-color: #2A2E45; /* blue black */
   --heading-font: "Merriweather Sans", sans-serif;
   --body-font: "Optima", sans-serif;
@@ -48,4 +47,29 @@ nav, p, section, article {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+
+
+.hero article img {
+  float: right;
+  width: 125px;
 }
