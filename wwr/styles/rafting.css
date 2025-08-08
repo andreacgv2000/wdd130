@@ -1,37 +1,48 @@
 
-
-
 :root {
   --primary-color: #CF995F; /* naranja */
   --secondary-color: #628395; /* celeste */
   --accent1-color: #96897B; /* sand */
   --accent2-color: #2A2E45; /* blue black */
-  --heading-font: "Merriweather Sans", sans-serif;
-  --body-font: "Optima", sans-serif;
+  --heading-font: "Merriweather", serif;
+  --body-font: "Roboto", sans-serif;
 }
 
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-  }
-
-  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--accent2-color);
+  line-height: 1.5;
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* Header grid */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.site-header img {
+  height: 60px;
+}
+
+.site-header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 h1, h2 {
@@ -39,37 +50,69 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* Hero section */
+.hero {
+  text-align: center;
 }
-
-
-.socialmedia a {
-    text-decoration: none;
-}
-
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-
-h1 {
-  position: absolute;
-  top: 20px;
   width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  height: auto;
 }
 
+.hero article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
 
 .hero article img {
-  float: right;
-  width: 125px;
+  width: 150px;
+  height: auto;
+}
+
+/* History section in grid */
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Adventure gallery flex */
+.adventure-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .socialmedia {
+  margin-top: 0.5rem;
+}
+
+footer .socialmedia img {
+  width: 30px;
+  margin: 0 0.5rem;
 }
