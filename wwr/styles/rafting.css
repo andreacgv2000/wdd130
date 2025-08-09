@@ -235,3 +235,20 @@ form fieldset label {
     justify-content: center;
   }
 }
+
+.profiles-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profiles-container figure {
+  text-align: center;
+}
+
+.profiles-container img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
