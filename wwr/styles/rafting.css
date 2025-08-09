@@ -116,3 +116,122 @@ footer .socialmedia img {
   width: 30px;
   margin: 0 0.5rem;
 }
+
+
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Employee profiles section */
+.employee-profiles {
+  flex: 1 1 300px;
+}
+
+.employee-profiles h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.profiles-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.profile figcaption {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Contact form section */
+.contact-form-section {
+  flex: 2 1 400px;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form label,
+form legend {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+form fieldset label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.subscribe-label {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+/* Reuse .submit-button from earlier if it exists */
+/* If not, add this: */
+.submit-button {
+  margin-top: 25px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #0056b3;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+  }
+  .employee-profiles,
+  .contact-form-section {
+    flex: 1 1 100%;
+  }
+  .profiles-container {
+    justify-content: center;
+  }
+}

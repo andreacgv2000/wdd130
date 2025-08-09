@@ -35,9 +35,38 @@
     <p>Phone: 502 42680937</p>
     <p> Email: <a href="mailto:info@andrewaterrafting.com">info@andrewaterrafting.com</a></p>
     <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189352.04855175017!2d-90.94967264092125!3d15.80481811500858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858b05fa3c4752f9%3A0x65900d9af14ebbc7!2sRio%20Chixoy!5e0!3m2!1sen!2sgt!4v1754709883439!5m2!1sen!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189352.04855175017!2d-90.94967264092125!3d15.80481811500858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858b05fa3c4752f9%3A0x65900d9af14ebbc7!2sRio%20Chixoy!5e0!3m2!1sen!2sgt!4v1754709883439!5m2!1sen!2sgt" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </div>
+
+
+
+<form action="#" method="post" aria-label="Contact form">
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+
+  <label for="email">Your Email Address:</label>
+  <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+  <label>Purpose of your message:</label>
+  <div class="radio-group" role="radiogroup" aria-labelledby="purpose-label">
+    <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+    <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+    <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+  </div>
+
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+  <div class="checkbox-group">
+    <label><input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter</label>
+  </div>
+
+  <button type="submit" class="submit-button" aria-label="Submit contact form">Send Message</button>
+</form>
+
+
+
 </main>
 
   <footer>
